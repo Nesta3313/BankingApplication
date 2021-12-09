@@ -10,7 +10,7 @@ class BankAccount:
         deposit_amount = float(input("Enter deposit amount: "))
         self.deposit = deposit_amount
         self.balance += self.deposit
-        print("You have deposited: "+ str(deposit_amount))
+        print("You have deposited: "+"$"+ str(deposit_amount))
 
     def get_withdrawal(self):
         withdraw_amount = float(input("How much are you withdrawing today?; "))
@@ -18,7 +18,7 @@ class BankAccount:
             print("You have insufficient funds, deposit some funds to withdraw")
         else:
             self.withdrawal = withdraw_amount
-            print("You have withdrawn " + str(self.withdrawal))
+            print("You have withdrawn " +"$"+str(self.withdrawal))
             self.balance = self.balance - withdraw_amount
 
 

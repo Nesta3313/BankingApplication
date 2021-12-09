@@ -14,6 +14,8 @@ class CheckingAccount(BankAccount):
         self.get_balance()
         if self.balance< self.minimum_balance:
             print("Your account balance is below $50")
+        elif self.balance == self.minimum_balance:
+            print("Your balance is $"+ str(self.balance )+ ", this is the minimum balance")
         else:
             print("Your balance is $"+ str(self.balance )+ ", it is above minimum balance")
 
